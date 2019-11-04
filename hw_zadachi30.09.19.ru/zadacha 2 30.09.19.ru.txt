@@ -1,0 +1,9 @@
+n = int(input()) 
+if n >= 1 and n <= 2 or n == 12: 
+    print ('зима') 
+elif n >= 3 and n <= 5: 
+    print ('весна') 
+elif n >= 6 and n <= 8: 
+    print ('лето') 
+elif n >= 9 and n <= 11: 
+    print ('осень')
