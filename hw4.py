@@ -10,5 +10,5 @@ def combsort(data):
                 data[i], data[j] = data[j], data[i] 
                 o = True 
     return data 
-a = list(map(int,input().split())) 
-print (combsort(a)) 
+a = list(map(int, input().split())) 
+print(combsort(a)) 
