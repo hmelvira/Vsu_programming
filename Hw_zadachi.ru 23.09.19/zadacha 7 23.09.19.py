@@ -3,7 +3,7 @@ n = randint(0, 100)
 while True: 
     s = int(input()) 
     if s > n: 
-        print('Загаданное число меньше!') 
+    print('Загаданное число меньше!') 
     if s < n: 
         print('Загаданное число больше!') 
     if s == n: 
