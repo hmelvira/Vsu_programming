@@ -1,0 +1,11 @@
+n = [] 
+def chF(s):
+    x = [] 
+    a = 1 
+    b = 1 
+    for i in range (0,s): 
+        x.append(a) 
+        a, b = b, a+b 
+    return x 
+n = chF(int(input())) 
+print (','.join(str(n[i]) for i in range(1, len(n)))) 
