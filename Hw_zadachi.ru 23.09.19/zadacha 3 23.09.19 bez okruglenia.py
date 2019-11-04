@@ -1,3 +1,4 @@
-import math 
-x, y, z = map(int,input().split()) 
-print(math.sqrt(x**2 + y**2 + z**2))
+def tr(x): 
+    for i in range(1,x+1): 
+        print ('*'*i) 
+tr(int(input()))
