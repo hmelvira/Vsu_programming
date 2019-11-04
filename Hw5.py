@@ -1,3 +1,4 @@
+from collections import deque
 graph = { 
     1: [2, 3, 8], 
     2: [1, 7, 9], 
@@ -12,7 +13,7 @@ graph = {
 } 
 
 visited = set() 
-q = [] 
+q = deque()
 s = [] 
 
 def bfs(a): 
@@ -24,8 +25,8 @@ def bfs(a):
         if not i in visited: 
             q.append(i) 
     while q: 
-        bfs(q.pop(0)) 
+        bfs(q.popleft())
 
-start = int(input()) 
+start, find = map(int, input().split()) 
 bfs(start) 
-print(s)
+print(s.count(find) >0)
