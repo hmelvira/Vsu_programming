@@ -1,0 +1,4 @@
+import math 
+x, y, z = map(int,input().split()) 
+print(math.sqrt(x**2 + y**2 + z**2))
+print(round(math.sqrt(x**2 + y**2 + z**2)),1))

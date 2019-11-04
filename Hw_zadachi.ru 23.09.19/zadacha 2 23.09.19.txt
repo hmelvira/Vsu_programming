@@ -1,0 +1,3 @@
+n = list(map(str,input().split())) 
+n = sorted(n, key=lambda x: list(x)[0])[::-1] 
+print (''.join(str(n[i]) for i in range(0,len(n))))
