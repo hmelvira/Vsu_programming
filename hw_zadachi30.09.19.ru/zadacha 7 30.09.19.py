@@ -6,4 +6,4 @@ for i in range(0, len(n)):
     if n.count(n[i]) > mcount: 
         mcount = n.count(n[i]) 
         m = n[i] 
-print ('Самое частое: ' + m)
+print ('Самое частое: ' + m) 
