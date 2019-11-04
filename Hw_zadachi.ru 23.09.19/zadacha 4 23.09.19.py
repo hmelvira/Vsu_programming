@@ -1,7 +1,7 @@
 n = list(input()) 
 s = 0 
 for i in range(0,len(n)): 
-    if n[i] == '(': 
+        if n[i] == '(': 
         s += 1 
     if n[i] == ')': 
         s -= 1 
