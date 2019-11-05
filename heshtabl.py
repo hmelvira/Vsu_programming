@@ -1,11 +1,11 @@
-storage = [['Null']*19 for x in range(172)] # 19 т.к. AAA = 36; 172 т.к. zzz = 171)
+storage = [['Null']*19 for x in range(172)]
 
 def hash(key):
     s = 0
     for i in range(len(key)-1):
-        s += ord(key[i]) - 65 # Т.к. буквы в ASCII начинаются с 65 ('A')
-    s -= ord(key[len(key)-1]) - 65 # складываем коды первых букв и вычитаем код последней (для того чтобы разная последовательность одинаковых букв воспринималась как разные ключи)
-    ind = (''.join(format(ord(x), 'b') for x in key)).count('0') # сумма 0 в 2-м представлении букв
+        s += ord(key[i]) - 65
+    s -= ord(key[len(key)-1]) - 65
+    ind = (''.join(format(ord(x), 'b') for x in key)).count('0')
     return s, ind
 
 def get_value(key):
@@ -19,7 +19,7 @@ def set_value(key, value):
     else:
         previous = storage[index][index2]
         storage[index][index2] = value
-        print('Значение '+str(previous)+' заменено на значение '+str(value)) # коллизия встречается крайне редко
+        print('Значение '+str(previous)+' заменено на значение '+str(value))
 
 def del_value(key):
     index, index2 = hash(key)
