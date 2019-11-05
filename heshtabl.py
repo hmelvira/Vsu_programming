@@ -25,7 +25,7 @@ def del_value(key):
     index, index2 = hash(key)
     value = storage[index][index2]
     storage[index][index2] = 'Null'
-    qeturn str(value)
+    return str(value)
 
 while True:
     command = input('Read, Write, Delete, Exit (r/w/d/e): ')
