@@ -15,8 +15,7 @@ def linetokey(line):
     if part1 == part2:
         key = part1 # т.к. XOR выдаст 000...0
     else:
-        part1 = list(map(int,part1))
-        part2 = list(map(int,part2))
+        part1, part2 = list(map(int, part1)), list(map(int, part2))
         for i in range(len(part1)):
             key += str(part1[i] ^ part2[i]) # XOR
     return key
