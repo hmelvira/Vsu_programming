@@ -10,7 +10,7 @@ def hash(key):
     return index, index2
 
 def linetokey(line):
-    part1, part2 = map(''.join, zip(*[iter(line)]*(len(line)//2)))
+    part1, part2 = map(''.join, zip(*[iter(line)] * (len(line) // 2)))
     key = ''
     if part1 == part2:
         key = part1 # т.к. XOR выдаст 000...0
